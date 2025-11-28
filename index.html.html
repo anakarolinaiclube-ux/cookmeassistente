@@ -43,23 +43,12 @@
 
     <style>
         html { scroll-behavior: smooth; }
-        
         body {
             -webkit-font-smoothing: antialiased;
+            /* Background restaurado para branco sólido */
+            background-color: #ffffff; 
             color: #1a1a1a;
             position: relative;
-
-            /* === NOVO BACKGROUND MINIMALISTA & VIVO === */
-            /* 1. Base levemente quente (Cream White) para tirar a frieza do branco puro */
-            background-color: #fcfbf9;
-            
-            /* 2. Gradientes radiais suaves (Glow) para dar vida sem poluir */
-            background-image: 
-                radial-gradient(circle at 90% 0%, rgba(255, 107, 0, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 0% 100%, rgba(255, 107, 0, 0.08) 0%, transparent 50%);
-            
-            /* Mantém o gradiente fixo enquanto a página rola (efeito premium) */
-            background-attachment: fixed;
         }
         
         .btn-cta {
@@ -107,8 +96,7 @@
     </header>
 
     <!-- 3. DEMONSTRAÇÃO (MOCKUP) -->
-    <!-- bg-brand-light mantido, mas agora blendando com o fundo off-white -->
-    <section class="bg-brand-light/50 py-16 px-4 overflow-hidden relative border-y border-orange-100/30">
+    <section class="bg-brand-light py-16 px-4 overflow-hidden relative border-y border-orange-100/30">
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand rounded-full opacity-5 blur-3xl pointer-events-none"></div>
 
         <div class="max-w-5xl mx-auto relative z-10">
